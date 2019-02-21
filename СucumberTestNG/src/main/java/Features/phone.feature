@@ -1,0 +1,1 @@
+Feature: Product name corresponds to the memorized value.
