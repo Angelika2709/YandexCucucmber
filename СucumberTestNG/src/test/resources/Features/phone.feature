@@ -1,9 +1,10 @@
 Feature: Mobile Phones section Feature
 
-Scenario: Mobile Phones section Scenario
+Scenario: The name of the product corresponds to the memorized value
 
-Given Electronics section is selected
-When title of page "Ёлектроника Ч купить на яндекс.ћаркете"
-Then user goes to the Mobile Phones section
-Then user selects the manufacturer and enters the price
-Then user sees 66 products
+Given Mobile Phones section is selected
+When user enters producer and price
+Then user checks the number of items
+Then the user remembers the first item
+Then user enters memorized value
+Then check that the name of the product corresponds to the memorized value

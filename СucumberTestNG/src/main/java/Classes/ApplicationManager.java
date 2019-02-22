@@ -10,6 +10,7 @@ public class ApplicationManager {
 	WebDriver wd;
 
 	private Manufactures manNames;
+	private NavigationHelper navigationHelper;
 	private String browser;
 
 	public ApplicationManager(String browser) {
@@ -23,7 +24,8 @@ public class ApplicationManager {
 		wd.get("https://market.yandex.ru");
 		wd.navigate().to("https://market.yandex.ru/?clid=505&utm_source=face_abovesearch&utm_campaign=face_abovesearch");
 		wd.navigate().to("https://market.yandex.ru/catalog--elektronika");
-		manNames = new Manufactures(wd);		
+		manNames = new Manufactures(wd);
+		navigationHelper = new NavigationHelper(wd); 
 	}
 
 	public void stop() {
@@ -33,6 +35,10 @@ public class ApplicationManager {
 
 	public Manufactures getManufNames() {
 		return manNames;
+	}
+	
+	public NavigationHelper getNavigationHelper() {
+		return navigationHelper;
 	}
         
    }
