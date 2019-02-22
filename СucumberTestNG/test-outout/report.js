@@ -48,42 +48,42 @@ formatter.match({
   "location": "MobilePhonesDefinition.mobile_phones_sect_is_selected()"
 });
 formatter.result({
-  "duration": 21085839714,
+  "duration": 53317239196,
   "status": "passed"
 });
 formatter.match({
   "location": "MobilePhonesDefinition.user_enters_producer_and_price()"
 });
 formatter.result({
-  "duration": 982368868,
+  "duration": 1247968215,
   "status": "passed"
 });
 formatter.match({
   "location": "MobilePhonesDefinition.user_checks_the_number_of_items()"
 });
 formatter.result({
-  "duration": 5063958559,
+  "duration": 5035947490,
   "status": "passed"
 });
 formatter.match({
   "location": "MobilePhonesDefinition.user_remembers_the_first_item()"
 });
 formatter.result({
-  "duration": 46459694,
+  "duration": 33873464,
   "status": "passed"
 });
 formatter.match({
   "location": "MobilePhonesDefinition.user_enters_memorized_value()"
 });
 formatter.result({
-  "duration": 5731452389,
+  "duration": 6218945093,
   "status": "passed"
 });
 formatter.match({
   "location": "MobilePhonesDefinition.check_name_product_corresponds_to_memorized_value()"
 });
 formatter.result({
-  "duration": 904988668,
+  "duration": 974371008,
   "status": "passed"
 });
 formatter.scenario({
@@ -128,42 +128,42 @@ formatter.match({
   "location": "HeadphonesDefinition.headphones_sect_is_selected()"
 });
 formatter.result({
-  "duration": 19382201700,
+  "duration": 22859096867,
   "status": "passed"
 });
 formatter.match({
   "location": "HeadphonesDefinition.user_enters_manufacturer_price()"
 });
 formatter.result({
-  "duration": 604485031,
+  "duration": 684083043,
   "status": "passed"
 });
 formatter.match({
   "location": "HeadphonesDefinition.user_verifies_number_items()"
 });
 formatter.result({
-  "duration": 5027897576,
+  "duration": 5025154112,
   "status": "passed"
 });
 formatter.match({
   "location": "HeadphonesDefinition.user_saves_first_item()"
 });
 formatter.result({
-  "duration": 30540774,
+  "duration": 32418532,
   "status": "passed"
 });
 formatter.match({
   "location": "HeadphonesDefinition.user_input_memorized_value()"
 });
 formatter.result({
-  "duration": 4752246398,
+  "duration": 4283637945,
   "status": "passed"
 });
 formatter.match({
   "location": "HeadphonesDefinition.verufy_name_product_corresponds_to_memorized_value()"
 });
 formatter.result({
-  "duration": 865626568,
+  "duration": 930188860,
   "status": "passed"
 });
 formatter.scenario({
@@ -193,15 +193,15 @@ formatter.match({
   "location": "SortMobilePhonesDefinition.mobile_phones_sect_is_choosen()"
 });
 formatter.result({
-  "duration": 19775549632,
+  "duration": 22443733808,
   "status": "passed"
 });
 formatter.match({
   "location": "SortMobilePhonesDefinition.user_sorts_price()"
 });
 formatter.result({
-  "duration": 66809116,
-  "error_message": "java.lang.ClassCastException: org.openqa.selenium.remote.RemoteWebElement cannot be cast to java.lang.Comparable\r\n\tat java.util.Comparators$NaturalOrderComparator.compare(Comparators.java:47)\r\n\tat java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)\r\n\tat java.util.TimSort.sort(TimSort.java:234)\r\n\tat java.util.Arrays.sort(Arrays.java:1512)\r\n\tat java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:348)\r\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)\r\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)\r\n\tat java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)\r\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\r\n\tat java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)\r\n\tat Classes.Items.getPrice(Items.java:52)\r\n\tat stepDefinitions.SortMobilePhonesDefinition.user_sorts_price(SortMobilePhonesDefinition.java:29)\r\n\tat ✽.When user sorts for the price(C:/Users/USER 1/git/alfatest/СucumberTestNG/src/test/resources/Features/goods.feature:31)\r\n",
+  "duration": 2247437015,
+  "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document\n  (Session info: chrome\u003d72.0.3626.109)\n  (Driver info: chromedriver\u003d2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform\u003dWindows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-SRR2B8KR\u0027, ip: \u0027192.168.100.243\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_181\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\\Users\\USER1~1\\AppData\\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49221}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.109, webStorageEnabled: true}\nSession ID: c2d659acc608a920a1d6c1bc6943ae2c\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)\r\n\tat Classes.Items.getPrice(Items.java:53)\r\n\tat stepDefinitions.SortMobilePhonesDefinition.user_sorts_price(SortMobilePhonesDefinition.java:30)\r\n\tat ✽.When user sorts for the price(C:/Users/USER 1/git/alfatest/СucumberTestNG/src/test/resources/Features/goods.feature:31)\r\n",
   "status": "failed"
 });
 formatter.match({});

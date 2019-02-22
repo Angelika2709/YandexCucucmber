@@ -16,7 +16,6 @@ import junit.framework.Assert;
 
 public class Items extends HelperBase {
 	List<WebElement> items = new ArrayList();
-	List<WebElement> prices = new ArrayList();
 	String nameItem;
 	private Comparator comparator;
 	
@@ -48,13 +47,15 @@ public class Items extends HelperBase {
 	}
 	
 	public void getPrice() {
-		prices = wd.findElements(By.xpath("//div[@class='price']"));
-		prices.stream().sorted().collect(Collectors.toList()).equals(prices);
-		System.out.println(prices.stream().sorted().collect(Collectors.toList()).equals(prices));
+		List<WebElement> pricesList = new ArrayList(); 
+		pricesList = wd.findElements(By.xpath("//div[@class='price']"));
+		for (int k=0; k<pricesList.size(); k++) {
+		System.out.println(pricesList.get(k).getText());
+				}
 	}	
 	
 	public void getCheckSort() {	
-		Assert.assertEquals(prices.stream().sorted().collect(Collectors.toList()).equals(prices), prices);
+		
 	}
 
 }
