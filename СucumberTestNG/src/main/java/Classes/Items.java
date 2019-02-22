@@ -47,7 +47,8 @@ public class Items extends HelperBase {
 			System.out.println("it works");
 	}
 
-	public void getPrice() {
+	public void getPrice() throws Exception {
+		Thread.sleep(5000);
 		List<WebElement> prices = new ArrayList();
 		prices = wd.findElements(By.xpath("//div[@class='price']"));
 		for (int y = 0; y < prices.size(); y++)
@@ -58,6 +59,7 @@ public class Items extends HelperBase {
 		List<String> prNew = prOld;
 		Collections.sort(prNew);
 		System.out.println("prNew=" + prNew.size());
+		Assert.assertEquals(prNew, prOld);
 		System.out.println(prNew.equals(prOld));
 
 	}
