@@ -6,11 +6,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
+
 public class ApplicationManager {
 	WebDriver wd;
 
 	private Manufactures manNames;
 	private NavigationHelper navigationHelper;
+	private PriceHelper priceHelper;
 	private String browser;
 
 	public ApplicationManager(String browser) {
@@ -26,6 +28,7 @@ public class ApplicationManager {
 		wd.navigate().to("https://market.yandex.ru/catalog--elektronika");
 		manNames = new Manufactures(wd);
 		navigationHelper = new NavigationHelper(wd); 
+		priceHelper = new PriceHelper(wd); 
 	}
 
 	public void stop() {

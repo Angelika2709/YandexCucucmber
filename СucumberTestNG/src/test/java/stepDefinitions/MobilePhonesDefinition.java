@@ -21,23 +21,22 @@ public class MobilePhonesDefinition extends TestBase {
 		app.getNavigationHelper().goPhones();
 	}
 
-	@When("^title of page 'Ёлектроника Ч купить на яндекс.ћаркете'$")
-	public void title_of_page_electr() {
-		String title = wd.getTitle();
-		System.out.println(title);
-		Assert.assertEquals("Ёлектроника Ч купить на яндекс.ћаркете", title);
+	@When("^user enters producer and price$")
+	public void user_enters_producer_and_price() {
+		app.getManufNames().get_manufacturer("Apple", "Samsung");
+		
 	}
 
 	@Then("^user goes to the Mobile Phones section$")
 	public void user_goes_to_the_Mobile_Phones_section() {
-		driver.findElement(By.partialLinkText("ћобильные телефоны")).click();
+		app.priceHepler().
 	}
 
 	@Then("^user selects the manufacturer and enters the price&")
 	public void user_selects_the_manuf_and_enters_the_price() {
-		driver.findElement(By.id("glpricefrom")).sendKeys("20000");
+		
 
-		app.get_manufacturer("Apple", "Samsung");
+		
 	}
 
 	@Then("^user sees 68 products&")

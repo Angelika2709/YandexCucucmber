@@ -1,6 +1,5 @@
 package Classes;
 
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -13,12 +12,12 @@ public class HelperBase {
 
 	protected static WebDriver wd;
 
-
 	public HelperBase(WebDriver wd) {
 		this.wd = wd;
 	}
 
-
+	protected void sendPrice(By locator, String text) {
+		wd.findElement(locator).sendKeys(text);
 	}
 
-
+}
