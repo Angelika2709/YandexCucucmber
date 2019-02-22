@@ -24,12 +24,13 @@ public class MobilePhonesDefinition extends TestBase {
 	@When("^user enters producer and price$")
 	public void user_enters_producer_and_price() {
 		app.getManufNames().get_manufacturer("Apple", "Samsung");
+		app.priceHelper.setPrice("20000");
 		
 	}
 
 	@Then("^user goes to the Mobile Phones section$")
 	public void user_goes_to_the_Mobile_Phones_section() {
-		app.priceHepler().
+		
 	}
 
 	@Then("^user selects the manufacturer and enters the price&")

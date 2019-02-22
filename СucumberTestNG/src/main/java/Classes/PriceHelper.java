@@ -12,7 +12,7 @@ public class PriceHelper extends HelperBase {
 		super(wd);
 	}
 
-	public void price(String price) {
+	public void setPrice(String price) {
 		sendPrice(By.id("glpricefrom"), price);	
 	}
 

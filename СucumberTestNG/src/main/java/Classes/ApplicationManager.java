@@ -12,7 +12,7 @@ public class ApplicationManager {
 
 	private Manufactures manNames;
 	private NavigationHelper navigationHelper;
-	private PriceHelper priceHelper;
+	public PriceHelper priceHelper;
 	private String browser;
 
 	public ApplicationManager(String browser) {
