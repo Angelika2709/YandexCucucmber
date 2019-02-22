@@ -6,7 +6,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "C:\\Users\\USER 1\\git\\alfatest\\ÑucumberTestNG\\src\\main\\java\\Features\\phone.feature"
+		features = "C:\\Users\\USER 1\\git\\alfatest\\ÑucumberTestNG\\src\\test\\resources\\Features\\phone.feature"
 		,glue= {"stepDefinitions"},
 		format= {"pretty", "html:test-outout"}
 		)
