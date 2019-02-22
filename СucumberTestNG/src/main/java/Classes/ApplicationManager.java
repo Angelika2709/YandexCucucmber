@@ -28,7 +28,6 @@ public class ApplicationManager {
 		wd.get("https://market.yandex.ru");
 		navigationHelper = new NavigationHelper(wd); 
 		getNavigationHelper().goSections();
-		getNavigationHelper().goPhones();
 		priceHelper = new PriceHelper(wd); 	
 		manNames = new Manufactures(wd);	
 		items = new Items(wd);		

@@ -25,5 +25,9 @@ public class NavigationHelper extends HelperBase {
 	public void goPhones() {
 		wd.findElement(By.linkText("Мобильные телефоны")).click();
 			}
+	
+	public void goHeadPhones() {
+		wd.findElement(By.linkText("Наушники и Bluetooth-гарнитуры")).click();
+			}
 
 }

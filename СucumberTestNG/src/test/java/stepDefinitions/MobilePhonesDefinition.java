@@ -21,12 +21,13 @@ public class MobilePhonesDefinition {
 	@Given("^Mobile Phones section is selected$")
 	public void mobile_phones_sect_is_selected() {
 		app.init();
+		app.getNavigationHelper().goPhones();
 	}
 
 	@When("^user enters producer and price$")
 	public void user_enters_producer_and_price() {		
 		app.priceHelper.setPrice("20000");
-		app.getManufNames().get_manufacturer();		
+		app.getManufNames().get_AppleSams();	
 	}
 
 	@Then("^user checks the number of items$")

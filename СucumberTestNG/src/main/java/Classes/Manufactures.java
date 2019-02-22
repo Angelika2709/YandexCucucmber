@@ -13,10 +13,16 @@ public class Manufactures extends HelperBase {
 
 	}
 
-	public void get_manufacturer() {
+
+	public void get_AppleSams() {
 		List<WebElement> checkboxes = wd.findElements(By.xpath("//span[@class='NVoaOvqe58']"));
 		checkboxes.get(0).click();
 		checkboxes.get(8).click();
+	}
+	
+	public void get_Beats() {
+		List<WebElement> boxes = wd.findElements(By.xpath("//span[@class='NVoaOvqe58']"));
+		boxes.get(2).click();
 	}
 
 }

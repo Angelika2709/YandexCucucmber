@@ -6,8 +6,8 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "C:\\Users\\USER 1\\git\\alfatest\\ÑucumberTestNG\\src\\test\\resources\\Features\\phone.feature"
-		,glue= {"stepDefinitions"},
+		features = "C:\\Users\\USER 1\\git\\alfatest\\ÑucumberTestNG\\src\\test\\resources\\Features\\goods.feature"
+		,glue= {"helpers","stepDefinitions"},
 		format= {"pretty", "html:test-outout"}
 		)
 
