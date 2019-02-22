@@ -30,16 +30,17 @@ public class MobilePhonesDefinition {
 	}
 
 	@Then("^user checks the number of items$")
-	public void user_checks_the_number_of_items() {
+	public void user_checks_the_number_of_items() throws InterruptedException {
 		app.getItems().getCountItems();
 	}
 
-	/*@Then("^user selects the manufacturer and enters the price&")
+	@Then("^user remembers the first item&")
 	public void user_selects_the_manuf_and_enters_the_price() {
+		app.getItems().getFirstItem();
 
 	}
 
-	@Then("^user sees 68 products&")
+	/*@Then("^user sees 68 products&")
 	public void user_sees_68_products() {
 		// driver.findElement(By.xpath(""));
 		app.stop();

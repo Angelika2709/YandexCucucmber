@@ -48,19 +48,22 @@ formatter.match({
   "location": "MobilePhonesDefinition.mobile_phones_sect_is_selected()"
 });
 formatter.result({
-  "duration": 22331990330,
+  "duration": 24063368906,
   "status": "passed"
 });
 formatter.match({
   "location": "MobilePhonesDefinition.user_enters_producer_and_price()"
 });
 formatter.result({
-  "duration": 1218061467,
+  "duration": 1254623782,
   "status": "passed"
 });
-formatter.match({});
+formatter.match({
+  "location": "MobilePhonesDefinition.user_checks_the_number_of_items()"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 5040819592,
+  "status": "passed"
 });
 formatter.match({});
 formatter.result({
