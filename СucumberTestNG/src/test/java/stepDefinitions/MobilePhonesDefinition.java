@@ -47,7 +47,7 @@ public class MobilePhonesDefinition {
 	
 	@Then("^check that the name of the product corresponds to the memorized value$")
 	public void check_name_product_corresponds_to_memorized_value() {
-		app.getItems().getCheck();
+		app.getItems().getCheckItems();
 		app.stop();
 	}
 

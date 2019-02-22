@@ -20,3 +20,13 @@ Then user verifies the number of items
 Then user saves the first item
 Then user input memorized value
 Then verify that the name of the product corresponds to the memorized value
+
+
+
+
+
+Scenario: Sorting by mobile phone price
+
+Given Mobile Phones section is choosen
+When user sorts for the price
+Then ñheck that the items on the page are sorted correctly
