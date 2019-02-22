@@ -34,18 +34,20 @@ public class MobilePhonesDefinition {
 		app.getItems().getCountItems();
 	}
 
-	@Then("^user remembers the first item&")
-	public void user_selects_the_manuf_and_enters_the_price() {
+	@Then("^user remembers the first item$")
+	public void user_remembers_the_first_item() {
 		app.getItems().getFirstItem();
-
 	}
-
-	/*@Then("^user sees 68 products&")
-	public void user_sees_68_products() {
-		// driver.findElement(By.xpath(""));
+	
+	@Then("^user enters memorized value$")
+	public void user_enters_memorized_value() {
+		app.getItems().setFirstItem();
+	}
+	
+	@Then("^check that the name of the product corresponds to the memorized value$")
+	public void check_name_product_corresponds_to_memorized_value() {
+		app.getItems().getCheck();
 		app.stop();
-
-		// Assert.assertEquals("Ёлектроника Ч купить на яндекс.ћаркете", title);
-	}*/
+	}
 
 }

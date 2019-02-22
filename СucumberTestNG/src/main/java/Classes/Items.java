@@ -6,9 +6,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import junit.framework.Assert;
 
 public class Items extends HelperBase {
 	List<WebElement> items = new ArrayList();
+	String nameItem;
+	String titleItems;
 
 	public Items(WebDriver wd) {
 		super(wd);
@@ -23,8 +26,21 @@ public class Items extends HelperBase {
 	}
 
 	public void getFirstItem() {
-		String nameItems = items.get(0).getAttribute("title");
-		System.out.println(nameItems);
+		nameItem = items.get(0).getText();
+		System.out.println(nameItem);
+	}
+
+	public void setFirstItem() {
+		wd.findElement(By.id("header-search")).sendKeys(nameItem);
+		wd.findElement(By.xpath("//button[@type='submit']")).click();
+	}
+	
+	public void getCheck() {
+		items = wd.findElements(By.xpath("//div[@class='n-snippet-cell2__title']"));
+		for(int i=0; i<items.size(); i++)
+			titleItems = items.get(i).getText();
+		Assert.assertEquals(nameItem, titleItems);
+		
 	}
 
 }
