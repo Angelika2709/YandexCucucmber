@@ -26,15 +26,15 @@ public class MobilePhonesDefinition {
 	@When("^user enters producer and price$")
 	public void user_enters_producer_and_price() {		
 		app.priceHelper.setPrice("20000");
-		app.getManufNames().get_manufacturer("Apple", "Samsung");
+		app.getManufNames().get_manufacturer();		
 	}
 
-	/*@Then("^user goes to the Mobile Phones section$")
-	public void user_goes_to_the_Mobile_Phones_section() {
+	@Then("^user checks the number of items$")
+	public void user_checks_the_number_of_items() {
 
 	}
 
-	@Then("^user selects the manufacturer and enters the price&")
+	/*@Then("^user selects the manufacturer and enters the price&")
 	public void user_selects_the_manuf_and_enters_the_price() {
 
 	}

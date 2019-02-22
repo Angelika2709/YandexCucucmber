@@ -19,5 +19,5 @@ public class HelperBase {
 	protected void sendPrice(By locator, String text) {
 		wd.findElement(locator).sendKeys(text);
 	}
-
+	
 }

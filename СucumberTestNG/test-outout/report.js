@@ -48,14 +48,14 @@ formatter.match({
   "location": "MobilePhonesDefinition.mobile_phones_sect_is_selected()"
 });
 formatter.result({
-  "duration": 24490074035,
+  "duration": 22331990330,
   "status": "passed"
 });
 formatter.match({
   "location": "MobilePhonesDefinition.user_enters_producer_and_price()"
 });
 formatter.result({
-  "duration": 1074160577,
+  "duration": 1218061467,
   "status": "passed"
 });
 formatter.match({});
