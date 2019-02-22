@@ -12,6 +12,7 @@ public class ApplicationManager {
 	WebDriver wd;
 
 	private Manufactures manNames;
+	private Items items;
 	private NavigationHelper navigationHelper;
 	public PriceHelper priceHelper;
 	private String browser;
@@ -29,7 +30,8 @@ public class ApplicationManager {
 		getNavigationHelper().goSections();
 		getNavigationHelper().goPhones();
 		priceHelper = new PriceHelper(wd); 	
-		manNames = new Manufactures(wd);		
+		manNames = new Manufactures(wd);	
+		items = new Items(wd);
 		
 	}
 
@@ -40,6 +42,10 @@ public class ApplicationManager {
 
 	public Manufactures getManufNames() {
 		return manNames;
+	}
+	
+	public Items getItems() {
+		return items;
 	}
 	
 	public NavigationHelper getNavigationHelper() {
