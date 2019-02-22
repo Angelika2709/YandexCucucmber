@@ -2,6 +2,7 @@ package Classes;
 
 import java.util.List;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -13,12 +14,20 @@ public class NavigationHelper extends HelperBase {
 
 	public NavigationHelper(WebDriver wd) {
 		super(wd);
-	}	
-	
-	public void goPhones() {	
-		wd.navigate().to("https://market.yandex.ru/catalog--mobilnye-telefony/54726/list?catId=91491&hid=91491");
 	}
 
+	public void goSections() throws Exception {
 
+		wd.navigate()
+				.to("https://market.yandex.ru/?clid=505&utm_source=face_abovesearch&utm_campaign=face_abovesearch");
+		Thread.sleep(10);
+		wd.navigate().to("https://market.yandex.ru/catalog--elektronika/54440");		
+	}	
+
+
+	public void goPhones() {
+		wd.findElement(By.linkText("Мобильные телефоны")).click();
+		System.out.println("ok");
+	}
 
 }
