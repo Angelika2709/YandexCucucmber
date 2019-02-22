@@ -6,14 +6,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class Manufactures extends HelperBase {
-	private Manufactures manNames;
+public class Manufactures extends HelperBase {	
 	String manApple;
 	String manSams;
 	
     public Manufactures(WebDriver wd) {
     	super(wd);
-    	manNames = new Manufactures(wd);
+    	
     }	
 
 

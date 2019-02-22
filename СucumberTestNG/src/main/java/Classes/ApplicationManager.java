@@ -21,15 +21,16 @@ public class ApplicationManager {
 	}
 
 	public void init() {
-
 		System.setProperty("webdriver.chrome.driver", "C://chromedriver_win32//chromedriver.exe");
 		wd = new ChromeDriver();
 		wd.manage().window().maximize();
 		wd.get("https://market.yandex.ru");
 		navigationHelper = new NavigationHelper(wd); 
+		getNavigationHelper().goSections();
+		getNavigationHelper().goPhones();
+		priceHelper = new PriceHelper(wd); 	
 		manNames = new Manufactures(wd);		
-		priceHelper = new PriceHelper(wd); 
-	
+		
 	}
 
 	public void stop() {

@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/USER 1/git/alfatest/СucumberTestNG/src/main/java/Features/phone.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/USER 1/git/alfatest/СucumberTestNG/src/test/resources/Features/phone.feature");
 formatter.feature({
   "line": 1,
   "name": "Mobile Phones section Feature",
@@ -8,53 +8,63 @@ formatter.feature({
 });
 formatter.scenario({
   "line": 3,
-  "name": "Mobile Phones section Scenario",
+  "name": "The name of the product corresponds to the memorized value",
   "description": "",
-  "id": "mobile-phones-section-feature;mobile-phones-section-scenario",
+  "id": "mobile-phones-section-feature;the-name-of-the-product-corresponds-to-the-memorized-value",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
   "line": 5,
-  "name": "Electronics section is selected",
+  "name": "Mobile Phones section is selected",
   "keyword": "Given "
 });
 formatter.step({
   "line": 6,
-  "name": "title of page \"����������� � ������ �� ������.�������\"",
+  "name": "user enters producer and price",
   "keyword": "When "
 });
 formatter.step({
   "line": 7,
-  "name": "user goes to the Mobile Phones section",
+  "name": "user checks the number of items",
   "keyword": "Then "
 });
 formatter.step({
   "line": 8,
-  "name": "user selects the manufacturer and enters the price",
+  "name": "the user remembers the first item",
   "keyword": "Then "
 });
 formatter.step({
   "line": 9,
-  "name": "user sees 66 products",
+  "name": "user enters memorized value",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 10,
+  "name": "check that the name of the product corresponds to the memorized value",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "MobilePhonesDefinition.electr_sct_is_sel()"
+  "location": "MobilePhonesDefinition.mobile_phones_sect_is_selected()"
 });
 formatter.result({
-  "duration": 13717289627,
+  "duration": 24490074035,
+  "status": "passed"
+});
+formatter.match({
+  "location": "MobilePhonesDefinition.user_enters_producer_and_price()"
+});
+formatter.result({
+  "duration": 1074160577,
   "status": "passed"
 });
 formatter.match({});
 formatter.result({
   "status": "undefined"
 });
-formatter.match({
-  "location": "MobilePhonesDefinition.user_goes_to_the_Mobile_Phones_section()"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.match({});
 formatter.result({
