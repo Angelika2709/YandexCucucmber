@@ -48,43 +48,42 @@ formatter.match({
   "location": "MobilePhonesDefinition.mobile_phones_sect_is_selected()"
 });
 formatter.result({
-  "duration": 24189860958,
+  "duration": 20913034314,
   "status": "passed"
 });
 formatter.match({
   "location": "MobilePhonesDefinition.user_enters_producer_and_price()"
 });
 formatter.result({
-  "duration": 1231800549,
+  "duration": 1111064652,
   "status": "passed"
 });
 formatter.match({
   "location": "MobilePhonesDefinition.user_checks_the_number_of_items()"
 });
 formatter.result({
-  "duration": 5042687964,
+  "duration": 5033370851,
   "status": "passed"
 });
 formatter.match({
   "location": "MobilePhonesDefinition.user_remembers_the_first_item()"
 });
 formatter.result({
-  "duration": 32971918,
+  "duration": 27586110,
   "status": "passed"
 });
 formatter.match({
   "location": "MobilePhonesDefinition.user_enters_memorized_value()"
 });
 formatter.result({
-  "duration": 6209266595,
+  "duration": 5875850346,
   "status": "passed"
 });
 formatter.match({
   "location": "MobilePhonesDefinition.check_name_product_corresponds_to_memorized_value()"
 });
 formatter.result({
-  "duration": 1475613887,
-  "error_message": "junit.framework.ComparisonFailure: expected:\u003c...фон Samsung Galaxy S[8]\u003e but was:\u003c...фон Samsung Galaxy S[4 GT-I9500 64GB]\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat Classes.Items.getCheck(Items.java:42)\r\n\tat stepDefinitions.MobilePhonesDefinition.check_name_product_corresponds_to_memorized_value(MobilePhonesDefinition.java:49)\r\n\tat ✽.Then check that the name of the product corresponds to the memorized value(C:/Users/USER 1/git/alfatest/СucumberTestNG/src/test/resources/Features/phone.feature:10)\r\n",
-  "status": "failed"
+  "duration": 1126599572,
+  "status": "passed"
 });
 });

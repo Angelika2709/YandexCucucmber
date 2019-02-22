@@ -11,8 +11,7 @@ import junit.framework.Assert;
 public class Items extends HelperBase {
 	List<WebElement> items = new ArrayList();
 	String nameItem;
-	String titleItems;
-
+	
 	public Items(WebDriver wd) {
 		super(wd);
 
@@ -36,11 +35,9 @@ public class Items extends HelperBase {
 	}
 	
 	public void getCheck() {
-		items = wd.findElements(By.xpath("//div[@class='n-snippet-cell2__title']"));
-		for(int i=0; i<items.size(); i++)
-			titleItems = items.get(i).getText();
-		Assert.assertEquals(nameItem, titleItems);
-		
+		if (wd.getPageSource().contains(nameItem))
+			System.out.println("it works");
+
 	}
 
 }

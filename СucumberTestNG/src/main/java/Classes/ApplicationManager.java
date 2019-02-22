@@ -31,8 +31,7 @@ public class ApplicationManager {
 		getNavigationHelper().goPhones();
 		priceHelper = new PriceHelper(wd); 	
 		manNames = new Manufactures(wd);	
-		items = new Items(wd);
-		
+		items = new Items(wd);		
 	}
 
 	public void stop() {
