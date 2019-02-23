@@ -48,42 +48,42 @@ formatter.match({
   "location": "MobilePhonesDefinition.mobile_phones_sect_is_selected()"
 });
 formatter.result({
-  "duration": 23397576620,
+  "duration": 21702893480,
   "status": "passed"
 });
 formatter.match({
   "location": "MobilePhonesDefinition.user_enters_producer_and_price()"
 });
 formatter.result({
-  "duration": 1115073182,
+  "duration": 1016436040,
   "status": "passed"
 });
 formatter.match({
   "location": "MobilePhonesDefinition.user_checks_the_number_of_items()"
 });
 formatter.result({
-  "duration": 5034585144,
+  "duration": 5032508132,
   "status": "passed"
 });
 formatter.match({
   "location": "MobilePhonesDefinition.user_remembers_the_first_item()"
 });
 formatter.result({
-  "duration": 32219705,
+  "duration": 29176722,
   "status": "passed"
 });
 formatter.match({
   "location": "MobilePhonesDefinition.user_enters_memorized_value()"
 });
 formatter.result({
-  "duration": 6148499500,
+  "duration": 5525512085,
   "status": "passed"
 });
 formatter.match({
   "location": "MobilePhonesDefinition.check_name_product_corresponds_to_memorized_value()"
 });
 formatter.result({
-  "duration": 965865842,
+  "duration": 930128273,
   "status": "passed"
 });
 formatter.scenario({
@@ -128,42 +128,42 @@ formatter.match({
   "location": "HeadphonesDefinition.headphones_sect_is_selected()"
 });
 formatter.result({
-  "duration": 21419270469,
+  "duration": 18077198867,
   "status": "passed"
 });
 formatter.match({
   "location": "HeadphonesDefinition.user_enters_manufacturer_price()"
 });
 formatter.result({
-  "duration": 686636641,
+  "duration": 608619427,
   "status": "passed"
 });
 formatter.match({
   "location": "HeadphonesDefinition.user_verifies_number_items()"
 });
 formatter.result({
-  "duration": 5025429738,
+  "duration": 5024543552,
   "status": "passed"
 });
 formatter.match({
   "location": "HeadphonesDefinition.user_saves_first_item()"
 });
 formatter.result({
-  "duration": 25633685,
+  "duration": 23827179,
   "status": "passed"
 });
 formatter.match({
   "location": "HeadphonesDefinition.user_input_memorized_value()"
 });
 formatter.result({
-  "duration": 5091075762,
+  "duration": 4331729637,
   "status": "passed"
 });
 formatter.match({
   "location": "HeadphonesDefinition.verufy_name_product_corresponds_to_memorized_value()"
 });
 formatter.result({
-  "duration": 936246668,
+  "duration": 893975984,
   "status": "passed"
 });
 formatter.scenario({
@@ -186,25 +186,28 @@ formatter.step({
 });
 formatter.step({
   "line": 32,
-  "name": "�heck that the items on the page are sorted correctly",
+  "name": "to see that the items on the page are sorted correctly",
   "keyword": "Then "
 });
 formatter.match({
   "location": "SortMobilePhonesDefinition.mobile_phones_sect_is_choosen()"
 });
 formatter.result({
-  "duration": 25173666412,
+  "duration": 18721383491,
   "status": "passed"
 });
 formatter.match({
   "location": "SortMobilePhonesDefinition.user_sorts_price()"
 });
 formatter.result({
-  "duration": 6476586260,
+  "duration": 6650357205,
   "status": "passed"
 });
-formatter.match({});
+formatter.match({
+  "location": "SortMobilePhonesDefinition.see_items_are_sorted_correctly()"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 675523690,
+  "status": "passed"
 });
 });

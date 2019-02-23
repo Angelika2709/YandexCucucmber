@@ -29,4 +29,4 @@ Scenario: Sorting by mobile phone price
 
 Given Mobile Phones section is choosen
 When user sorts for the price
-Then ñheck that the items on the page are sorted correctly
+Then to see that the items on the page are sorted correctly

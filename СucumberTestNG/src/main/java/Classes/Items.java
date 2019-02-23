@@ -9,6 +9,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -17,10 +18,7 @@ import junit.framework.Assert;
 public class Items extends HelperBase {
 	List<WebElement> items = new ArrayList();
 	String nameItem;
-	List<String> prOld = new ArrayList();
-	List<String> prNew = new ArrayList();
 	List<WebElement> prices = new ArrayList();
-	String s;
 
 	public Items(WebDriver wd) {
 		super(wd);
@@ -53,19 +51,17 @@ public class Items extends HelperBase {
 		Thread.sleep(5000);
 		prices = wd.findElements(By.xpath("//div[@class='price']"));
 		for (int y = 0; y < prices.size(); y++) {
-			s = prices.get(y).getText();
+			String s = prices.get(y).getText();
+			System.out.println(s);
 		}
-		prOld.add(s);
-		prNew.add(s);
-		//System.out.println("prNew=" + prNew);
 	}
 
 	public void getCheckSort() {
-		Collections.sort(prNew);
-		System.out.println("prNew=" + prNew);
-		System.out.println("prold=" + prOld);
-		System.out.println(prNew.equals(prOld));
-
+		System.out.println("__");
+		/*
+		 * JavascriptExecutor jse = ((JavascriptExecutor)wd); jse.executeScript(
+		 * "https://yastatic.net/market-skubi/_/JOleTI6Q_9tRnfHeyfupVhI2vu4.js");
+		 */
 	}
 
 }

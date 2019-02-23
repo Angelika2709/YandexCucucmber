@@ -30,9 +30,9 @@ public class SortMobilePhonesDefinition {
 		app.getItems().getPrice();	
 	}
 
-	@Then("^ñheck that the items on the page are sorted correctly$")
-	public void ñheck_items_are_sorted_correctly() {	
-		app.getItems().getCheckSort();
+	@Then("^to see that the items on the page are sorted correctly$")
+	public void see_items_are_sorted_correctly() {	
+		app.getItems().getCheckSort();		
 		app.stop();
 	}
 
