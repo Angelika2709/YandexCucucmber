@@ -19,6 +19,8 @@ public class Items extends HelperBase {
 	String nameItem;
 	List<String> prOld = new ArrayList();
 	List<String> prNew = new ArrayList();
+	List<WebElement> prices = new ArrayList();
+	String s;
 
 	public Items(WebDriver wd) {
 		super(wd);
@@ -49,17 +51,19 @@ public class Items extends HelperBase {
 
 	public void getPrice() throws Exception {
 		Thread.sleep(5000);
-		List<WebElement> prices = new ArrayList();
 		prices = wd.findElements(By.xpath("//div[@class='price']"));
-		for (int y = 0; y < prices.size(); y++)
-			prOld.add(prices.get(y).getText());
+		for (int y = 0; y < prices.size(); y++) {
+			s = prices.get(y).getText();
+		}
+		prOld.add(s);
+		prNew.add(s);
+		//System.out.println("prNew=" + prNew);
 	}
 
 	public void getCheckSort() {
-		List<String> prNew = prOld;
 		Collections.sort(prNew);
-		System.out.println("prNew=" + prNew.size());
-		Assert.assertEquals(prNew, prOld);
+		System.out.println("prNew=" + prNew);
+		System.out.println("prold=" + prOld);
 		System.out.println(prNew.equals(prOld));
 
 	}
