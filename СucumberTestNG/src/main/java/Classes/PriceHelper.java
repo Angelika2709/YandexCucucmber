@@ -15,5 +15,4 @@ public class PriceHelper extends HelperBase {
 	public void setPrice(String price) {
 		sendPrice(By.id("glpricefrom"), price);	
 	}
-
 }
