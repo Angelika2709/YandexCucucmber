@@ -44,7 +44,7 @@ public class Items extends HelperBase {
 
 	public void getCheckItems() {
 		if (wd.getPageSource().contains(nameItem))
-			System.out.println("it works");
+			System.out.println("Name items");
 	}
 
 	public void getPrice() throws Exception {
