@@ -28,8 +28,7 @@ public class SortMobilePhonesDefinition {
 	public void user_sorts_price() throws Exception {
 		app.getNavigationHelper().goSort();	
 		app.getItems().getFirstPrice();			
-		app.getItems().getSecondPrice();
-		
+		app.getItems().getSecondPrice();		
 	}
 
 	@Then("^to see that the items on the page are sorted correctly$")
