@@ -68,6 +68,7 @@ public class Items extends HelperBase {
 		}
 	}
 		
+		@SuppressWarnings("deprecation")
 		public void getCheckSort() {
 			System.out.println("___");
 			Assert.assertEquals(pricesNotSort.get(0), pricesSort.get(0));
