@@ -25,9 +25,10 @@ public class SortMobilePhonesDefinition {
 	}
 
 	@When("^user sorts for the price$")
-	public void user_sorts_price() throws Exception {		
+	public void user_sorts_price() throws Exception {
+		app.getItems().getFirstPrice();	
 		app.getNavigationHelper().goSort();	
-		app.getItems().getPrice();	
+		
 	}
 
 	@Then("^to see that the items on the page are sorted correctly$")

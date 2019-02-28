@@ -1,28 +1,26 @@
 package Classes;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.Collections;
-import java.util.Comparator;
-import java.util.LinkedHashSet;
 import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import junit.framework.Assert;
 
 public class Items extends HelperBase {
 	List<WebElement> items = new ArrayList();
 	String nameItem;
-	List<WebElement> prices = new ArrayList();
+	List<WebElement> prValues = new ArrayList();
+	List<Integer> pricesNotSort = new ArrayList<Integer>();
+	String[] pricesSort;
 
 	public Items(WebDriver wd) {
 		super(wd);
-
 	}
 
 	public void getCountItems() throws InterruptedException {
@@ -47,21 +45,23 @@ public class Items extends HelperBase {
 			System.out.println("Name items");
 	}
 
-	public void getPrice() throws Exception {
+	public void getFirstPrice() throws Exception {
 		Thread.sleep(5000);
-		prices = wd.findElements(By.xpath("//div[@class='price']"));
-		for (int y = 0; y < prices.size(); y++) {
-			String s = prices.get(y).getText();
-			System.out.println(s);
+		List<WebElement> prValues = wd.findElements(By.xpath("//div[@class='price']"));
+		for (int j = 0; j < prValues.size(); j++) {
+			String s = prValues.get(j).getText().replaceAll("\u20BD", "").replaceAll("\\s", "");
+			pricesNotSort.add(Integer.parseInt(s));
+			for (int k = 0; k < pricesNotSort.size(); k++) {
+				Collections.sort(pricesNotSort);
+				System.out.println(pricesNotSort.get(k));
+			}			
 		}
 	}
 
 	public void getCheckSort() {
-		System.out.println("__");
-		/*
-		 * JavascriptExecutor jse = ((JavascriptExecutor)wd); jse.executeScript(
-		 * "https://yastatic.net/market-skubi/_/JOleTI6Q_9tRnfHeyfupVhI2vu4.js");
-		 */
+		System.out.println("___");
+		// Arrays.sort(pricesMy);
+		// System.out.println("Сравнение "+ Arrays.equals(pricesMy, pricesNotMy));
 	}
 
 }

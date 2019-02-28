@@ -10,7 +10,6 @@ public class Manufactures extends HelperBase {
 
 	public Manufactures(WebDriver wd) {
 		super(wd);
-
 	}
 
 
