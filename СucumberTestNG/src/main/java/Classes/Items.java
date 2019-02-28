@@ -15,9 +15,8 @@ import junit.framework.Assert;
 public class Items extends HelperBase {
 	List<WebElement> items = new ArrayList();
 	String nameItem;
-	List<WebElement> prValues = new ArrayList();
 	List<Integer> pricesNotSort = new ArrayList<Integer>();
-	String[] pricesSort;
+	List<Integer> pricesSort = new ArrayList<Integer>();
 
 	public Items(WebDriver wd) {
 		super(wd);
@@ -51,17 +50,27 @@ public class Items extends HelperBase {
 		for (int j = 0; j < prValues.size(); j++) {
 			String s = prValues.get(j).getText().replaceAll("\u20BD", "").replaceAll("\\s", "");
 			pricesNotSort.add(Integer.parseInt(s));
-			for (int k = 0; k < pricesNotSort.size(); k++) {
-				Collections.sort(pricesNotSort);
-				System.out.println(pricesNotSort.get(k));
-			}			
 		}
+		Collections.sort(pricesNotSort);
+		for (int k = 0; k < pricesNotSort.size(); k++) {
+			pricesNotSort.get(k);
+		}	
 	}
 
-	public void getCheckSort() {
-		System.out.println("___");
-		// Arrays.sort(pricesMy);
-		// System.out.println("Сравнение "+ Arrays.equals(pricesMy, pricesNotMy));
+	
+	public void getSecondPrice() throws Exception {
+		Thread.sleep(5000);
+		List<WebElement> prValues2 = wd.findElements(By.xpath("//div[@class='price']"));
+		for (int l = 0; l < prValues2.size(); l++) {
+			String s2 = prValues2.get(l).getText().replaceAll("\u20BD", "").replaceAll("\\s", "");
+			pricesSort.add(Integer.parseInt(s2));
+			System.out.println(pricesSort.get(l));	
+		}
 	}
+		
+		public void getCheckSort() {
+			System.out.println("___");
+			Assert.assertEquals(pricesNotSort.get(0), pricesSort.get(0));
+		}
 
 }
