@@ -21,7 +21,7 @@ public class Manufactures extends HelperBase {
 	
 	public void get_Beats() {
 		List<WebElement> boxes = wd.findElements(By.xpath("//span[@class='NVoaOvqe58']"));
-		boxes.get(2).click();
+		boxes.get(1).click();
 	}
 
 }
