@@ -31,7 +31,7 @@ public class MobilePhonesDefinition {
 	}
 
 	@Then("^user checks the number of items$")
-	public void user_checks_the_number_of_items() throws InterruptedException {
+	public void user_checks_the_number_of_items() throws Exception {
 		app.getItems().getCountItems();
 	}
 

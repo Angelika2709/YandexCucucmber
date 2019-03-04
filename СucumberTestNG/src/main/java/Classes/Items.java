@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.Select;
 import junit.framework.Assert;
 
 public class Items extends HelperBase {
-	List<WebElement> items = new ArrayList();
+	List<WebElement> items = new ArrayList<WebElement>();
 	String nameItem;
 	List<Integer> pricesNotSort = new ArrayList<Integer>();
 	List<Integer> pricesSort = new ArrayList<Integer>();
